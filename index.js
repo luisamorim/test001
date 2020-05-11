@@ -1,11 +1,9 @@
-const http = require("http");
+const app = require("./app");
 const port = process.env.PORT || 3000;
-http
-  .createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader("Content-Type", "text/plain");
-    res.end("Server Nodejs!");
-  })
-  .listen(port, () => {
-    console.log("Server is running...");
-  });
+
+const routes = require("./routes");
+routes(app);
+
+app.listen(port, () => {
+  console.log("server is running.");
+});

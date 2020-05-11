@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/luisamorim/test001/issues"
   },
-  "homepage": "https://github.com/luisamorim/test001#readme"
+  "homepage": "https://github.com/luisamorim/test001#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
